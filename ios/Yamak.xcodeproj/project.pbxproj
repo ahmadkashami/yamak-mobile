@@ -1,0 +1,1352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042DFB182B26CA6A0076AD2F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		042DFB192B26CA6A0076AD2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		042DFB1D2B26CA6A0076AD2F /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C02B23BF32005E22A7 /* EvilIcons.ttf */; };
+		042DFB1E2B26CA6A0076AD2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		042DFB1F2B26CA6A0076AD2F /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B82B23BF32005E22A7 /* MaterialCommunityIcons.ttf */; };
+		042DFB202B26CA6A0076AD2F /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BD2B23BF32005E22A7 /* FontAwesome5_Regular.ttf */; };
+		042DFB212B26CA6A0076AD2F /* FontAwesome6_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C12B23BF32005E22A7 /* FontAwesome6_Solid.ttf */; };
+		042DFB222B26CA6A0076AD2F /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BB2B23BF32005E22A7 /* Ionicons.ttf */; };
+		042DFB232B26CA6A0076AD2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		042DFB242B26CA6A0076AD2F /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE484CA4AF594579A98AF1DC /* Roboto-Black.ttf */; };
+		042DFB252B26CA6A0076AD2F /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83807D9A3C9E4EF68AE751F7 /* Roboto-BlackItalic.ttf */; };
+		042DFB262B26CA6A0076AD2F /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDD64E8D00B242B1A71F9443 /* Roboto-Bold.ttf */; };
+		042DFB272B26CA6A0076AD2F /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C32B23BF32005E22A7 /* FontAwesome6_Brands.ttf */; };
+		042DFB282B26CA6A0076AD2F /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BA2B23BF32005E22A7 /* Foundation.ttf */; };
+		042DFB292B26CA6A0076AD2F /* FontAwesome6_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B52B23BF32005E22A7 /* FontAwesome6_Regular.ttf */; };
+		042DFB2A2B26CA6A0076AD2F /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B62B23BF32005E22A7 /* Entypo.ttf */; };
+		042DFB2B2B26CA6A0076AD2F /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BC2B23BF32005E22A7 /* FontAwesome5_Solid.ttf */; };
+		042DFB2C2B26CA6A0076AD2F /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2981234E1194C52A8AD8E80 /* Roboto-BoldItalic.ttf */; };
+		042DFB2D2B26CA6A0076AD2F /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F8C43704E0741998EEDEBC7 /* Roboto-Italic.ttf */; };
+		042DFB2E2B26CA6A0076AD2F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C42B23BF32005E22A7 /* MaterialIcons.ttf */; };
+		042DFB2F2B26CA6A0076AD2F /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B72B23BF32005E22A7 /* FontAwesome5_Brands.ttf */; };
+		042DFB302B26CA6A0076AD2F /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6560A3CFA1654910BB9E3C0D /* Roboto-Light.ttf */; };
+		042DFB312B26CA6A0076AD2F /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE75EDDFCF4B4FF9A3278E64 /* Roboto-LightItalic.ttf */; };
+		042DFB322B26CA6A0076AD2F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1CEBAB1AD744F78B4DC72B3 /* Roboto-Medium.ttf */; };
+		042DFB332B26CA6A0076AD2F /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B42B23BF32005E22A7 /* Feather.ttf */; };
+		042DFB342B26CA6A0076AD2F /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B32B23BF32005E22A7 /* Octicons.ttf */; };
+		042DFB352B26CA6A0076AD2F /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BF2B23BF32005E22A7 /* Zocial.ttf */; };
+		042DFB362B26CA6A0076AD2F /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D846AA17669A43BF938E7A5B /* Roboto-MediumItalic.ttf */; };
+		042DFB372B26CA6A0076AD2F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27CE7AE1E97046DD946AF644 /* Roboto-Regular.ttf */; };
+		042DFB382B26CA6A0076AD2F /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B22B23BF32005E22A7 /* Fontisto.ttf */; };
+		042DFB392B26CA6A0076AD2F /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C22B23BF32005E22A7 /* SimpleLineIcons.ttf */; };
+		042DFB3A2B26CA6A0076AD2F /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BE2B23BF32005E22A7 /* FontAwesome.ttf */; };
+		042DFB3B2B26CA6A0076AD2F /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43F1FD7AFC2F4C2B9BFD1E69 /* Roboto-Thin.ttf */; };
+		042DFB3C2B26CA6A0076AD2F /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B92B23BF32005E22A7 /* AntDesign.ttf */; };
+		042DFB3D2B26CA6A0076AD2F /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBD891B427DC4809AB7B41DD /* Roboto-ThinItalic.ttf */; };
+		042DFB4B2B26E2D00076AD2F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		042DFB4C2B26E2D00076AD2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		042DFB502B26E2D00076AD2F /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C02B23BF32005E22A7 /* EvilIcons.ttf */; };
+		042DFB512B26E2D00076AD2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		042DFB522B26E2D00076AD2F /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B82B23BF32005E22A7 /* MaterialCommunityIcons.ttf */; };
+		042DFB532B26E2D00076AD2F /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BD2B23BF32005E22A7 /* FontAwesome5_Regular.ttf */; };
+		042DFB542B26E2D00076AD2F /* FontAwesome6_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C12B23BF32005E22A7 /* FontAwesome6_Solid.ttf */; };
+		042DFB552B26E2D00076AD2F /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BB2B23BF32005E22A7 /* Ionicons.ttf */; };
+		042DFB562B26E2D00076AD2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		042DFB572B26E2D00076AD2F /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE484CA4AF594579A98AF1DC /* Roboto-Black.ttf */; };
+		042DFB582B26E2D00076AD2F /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83807D9A3C9E4EF68AE751F7 /* Roboto-BlackItalic.ttf */; };
+		042DFB592B26E2D00076AD2F /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDD64E8D00B242B1A71F9443 /* Roboto-Bold.ttf */; };
+		042DFB5A2B26E2D00076AD2F /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C32B23BF32005E22A7 /* FontAwesome6_Brands.ttf */; };
+		042DFB5B2B26E2D00076AD2F /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BA2B23BF32005E22A7 /* Foundation.ttf */; };
+		042DFB5C2B26E2D00076AD2F /* FontAwesome6_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B52B23BF32005E22A7 /* FontAwesome6_Regular.ttf */; };
+		042DFB5D2B26E2D00076AD2F /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B62B23BF32005E22A7 /* Entypo.ttf */; };
+		042DFB5E2B26E2D00076AD2F /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BC2B23BF32005E22A7 /* FontAwesome5_Solid.ttf */; };
+		042DFB5F2B26E2D00076AD2F /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2981234E1194C52A8AD8E80 /* Roboto-BoldItalic.ttf */; };
+		042DFB602B26E2D00076AD2F /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F8C43704E0741998EEDEBC7 /* Roboto-Italic.ttf */; };
+		042DFB612B26E2D00076AD2F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C42B23BF32005E22A7 /* MaterialIcons.ttf */; };
+		042DFB622B26E2D00076AD2F /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B72B23BF32005E22A7 /* FontAwesome5_Brands.ttf */; };
+		042DFB632B26E2D00076AD2F /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6560A3CFA1654910BB9E3C0D /* Roboto-Light.ttf */; };
+		042DFB642B26E2D00076AD2F /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE75EDDFCF4B4FF9A3278E64 /* Roboto-LightItalic.ttf */; };
+		042DFB652B26E2D00076AD2F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1CEBAB1AD744F78B4DC72B3 /* Roboto-Medium.ttf */; };
+		042DFB662B26E2D00076AD2F /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B42B23BF32005E22A7 /* Feather.ttf */; };
+		042DFB672B26E2D00076AD2F /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B32B23BF32005E22A7 /* Octicons.ttf */; };
+		042DFB682B26E2D00076AD2F /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BF2B23BF32005E22A7 /* Zocial.ttf */; };
+		042DFB692B26E2D00076AD2F /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D846AA17669A43BF938E7A5B /* Roboto-MediumItalic.ttf */; };
+		042DFB6A2B26E2D00076AD2F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27CE7AE1E97046DD946AF644 /* Roboto-Regular.ttf */; };
+		042DFB6B2B26E2D00076AD2F /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B22B23BF32005E22A7 /* Fontisto.ttf */; };
+		042DFB6C2B26E2D00076AD2F /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C22B23BF32005E22A7 /* SimpleLineIcons.ttf */; };
+		042DFB6D2B26E2D00076AD2F /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BE2B23BF32005E22A7 /* FontAwesome.ttf */; };
+		042DFB6E2B26E2D00076AD2F /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43F1FD7AFC2F4C2B9BFD1E69 /* Roboto-Thin.ttf */; };
+		042DFB6F2B26E2D00076AD2F /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B92B23BF32005E22A7 /* AntDesign.ttf */; };
+		042DFB702B26E2D00076AD2F /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBD891B427DC4809AB7B41DD /* Roboto-ThinItalic.ttf */; };
+		047215C52B23BF32005E22A7 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B22B23BF32005E22A7 /* Fontisto.ttf */; };
+		047215C62B23BF32005E22A7 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B32B23BF32005E22A7 /* Octicons.ttf */; };
+		047215C72B23BF32005E22A7 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B42B23BF32005E22A7 /* Feather.ttf */; };
+		047215C82B23BF32005E22A7 /* FontAwesome6_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B52B23BF32005E22A7 /* FontAwesome6_Regular.ttf */; };
+		047215C92B23BF32005E22A7 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B62B23BF32005E22A7 /* Entypo.ttf */; };
+		047215CA2B23BF32005E22A7 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B72B23BF32005E22A7 /* FontAwesome5_Brands.ttf */; };
+		047215CB2B23BF32005E22A7 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B82B23BF32005E22A7 /* MaterialCommunityIcons.ttf */; };
+		047215CC2B23BF32005E22A7 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215B92B23BF32005E22A7 /* AntDesign.ttf */; };
+		047215CD2B23BF32005E22A7 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BA2B23BF32005E22A7 /* Foundation.ttf */; };
+		047215CE2B23BF32005E22A7 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BB2B23BF32005E22A7 /* Ionicons.ttf */; };
+		047215CF2B23BF32005E22A7 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BC2B23BF32005E22A7 /* FontAwesome5_Solid.ttf */; };
+		047215D02B23BF32005E22A7 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BD2B23BF32005E22A7 /* FontAwesome5_Regular.ttf */; };
+		047215D12B23BF32005E22A7 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BE2B23BF32005E22A7 /* FontAwesome.ttf */; };
+		047215D22B23BF32005E22A7 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215BF2B23BF32005E22A7 /* Zocial.ttf */; };
+		047215D32B23BF32005E22A7 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C02B23BF32005E22A7 /* EvilIcons.ttf */; };
+		047215D42B23BF32005E22A7 /* FontAwesome6_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C12B23BF32005E22A7 /* FontAwesome6_Solid.ttf */; };
+		047215D52B23BF32005E22A7 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C22B23BF32005E22A7 /* SimpleLineIcons.ttf */; };
+		047215D62B23BF32005E22A7 /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C32B23BF32005E22A7 /* FontAwesome6_Brands.ttf */; };
+		047215D72B23BF32005E22A7 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047215C42B23BF32005E22A7 /* MaterialIcons.ttf */; };
+		0B22DE232B35E531006DDB64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B22DE222B35E531006DDB64 /* GoogleService-Info.plist */; };
+		0BC951BD2B484C8000ACDDF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BC951BC2B484C8000ACDDF2 /* GoogleService-Info.plist */; };
+		0D042B732BA10A5200EC25AE /* Ramadan_AppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D042B6F2BA10A5200EC25AE /* Ramadan_AppIcon@2x.png */; };
+		0D042B742BA10A5200EC25AE /* Ramadan_AppIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D042B702BA10A5200EC25AE /* Ramadan_AppIcon@3x.png */; };
+		0D042B752BA10A5200EC25AE /* defualt_AppIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D042B712BA10A5200EC25AE /* defualt_AppIcon@3x.png */; };
+		0D042B762BA10A5200EC25AE /* defualt_AppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D042B722BA10A5200EC25AE /* defualt_AppIcon@2x.png */; };
+		0F3254F5F5E943E297B4B523 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43F1FD7AFC2F4C2B9BFD1E69 /* Roboto-Thin.ttf */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		17C6521C11884B6A8630FF59 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1CEBAB1AD744F78B4DC72B3 /* Roboto-Medium.ttf */; };
+		184A9A3E3DE54BDAB4B93A11 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBD891B427DC4809AB7B41DD /* Roboto-ThinItalic.ttf */; };
+		1BDF72DE2EFD4E6F8136F95C /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE75EDDFCF4B4FF9A3278E64 /* Roboto-LightItalic.ttf */; };
+		2A5BBFA10B7D4732B6DF0505 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D846AA17669A43BF938E7A5B /* Roboto-MediumItalic.ttf */; };
+		58F57B34BB834E1BB22D76CD /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDD64E8D00B242B1A71F9443 /* Roboto-Bold.ttf */; };
+		5B3E73F4B3F112A1032A6EC7 /* libPods-Yamak-Yamak-Stage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E815023826AFEF52AD4C3C3A /* libPods-Yamak-Yamak-Stage.a */; };
+		5B64EECB366DACF10F70669D /* libPods-Yamak-Yamak-Dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC2C3B9679BB46943FADD08 /* libPods-Yamak-Yamak-Dev.a */; };
+		603B0E0921504A5194F317AD /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27CE7AE1E97046DD946AF644 /* Roboto-Regular.ttf */; };
+		6AF57926CF124F57BACAF081 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2981234E1194C52A8AD8E80 /* Roboto-BoldItalic.ttf */; };
+		784C864A900A10C67545AE21 /* libPods-Yamak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 598D6694FC67CB0995EA855A /* libPods-Yamak.a */; };
+		790A373F7AF84151A4804786 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE484CA4AF594579A98AF1DC /* Roboto-Black.ttf */; };
+		7B65466D42AE4E69B6C1DA15 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F8C43704E0741998EEDEBC7 /* Roboto-Italic.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D27874AB13A348519BE21B74 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6560A3CFA1654910BB9E3C0D /* Roboto-Light.ttf */; };
+		FE74C89E23DC46619CB1DEAE /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83807D9A3C9E4EF68AE751F7 /* Roboto-BlackItalic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* YamakTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YamakTests.m; sourceTree = "<group>"; };
+		042DFB452B26CA6A0076AD2F /* Yamak-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yamak-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		042DFB462B26CA6A0076AD2F /* Yamak dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Yamak dev-Info.plist"; path = "/Users/mac/Desktop/husam/yamak/mobile/Yamak/ios/Yamak dev-Info.plist"; sourceTree = "<absolute>"; };
+		042DFB782B26E2D10076AD2F /* Yamak-Stage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yamak-Stage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		042DFB792B26E2D10076AD2F /* Yamak Stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Yamak Stage-Info.plist"; path = "/Users/mac/Desktop/husam/yamak/mobile/Yamak/ios/Yamak Stage-Info.plist"; sourceTree = "<absolute>"; };
+		043DDDC72B262E1000BAF67F /* Yamak.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Yamak.entitlements; path = Yamak/Yamak.entitlements; sourceTree = "<group>"; };
+		047215B22B23BF32005E22A7 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		047215B32B23BF32005E22A7 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		047215B42B23BF32005E22A7 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		047215B52B23BF32005E22A7 /* FontAwesome6_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Regular.ttf; sourceTree = "<group>"; };
+		047215B62B23BF32005E22A7 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		047215B72B23BF32005E22A7 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		047215B82B23BF32005E22A7 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		047215B92B23BF32005E22A7 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		047215BA2B23BF32005E22A7 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		047215BB2B23BF32005E22A7 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		047215BC2B23BF32005E22A7 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		047215BD2B23BF32005E22A7 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		047215BE2B23BF32005E22A7 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		047215BF2B23BF32005E22A7 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		047215C02B23BF32005E22A7 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		047215C12B23BF32005E22A7 /* FontAwesome6_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Solid.ttf; sourceTree = "<group>"; };
+		047215C22B23BF32005E22A7 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		047215C32B23BF32005E22A7 /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
+		047215C42B23BF32005E22A7 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		0B22DE222B35E531006DDB64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0B57F07A2B380D600024997A /* Yamak-Dev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Yamak-Dev.entitlements"; sourceTree = "<group>"; };
+		0BC951BC2B484C8000ACDDF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0D042B6F2BA10A5200EC25AE /* Ramadan_AppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ramadan_AppIcon@2x.png"; sourceTree = "<group>"; };
+		0D042B702BA10A5200EC25AE /* Ramadan_AppIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ramadan_AppIcon@3x.png"; sourceTree = "<group>"; };
+		0D042B712BA10A5200EC25AE /* defualt_AppIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "defualt_AppIcon@3x.png"; sourceTree = "<group>"; };
+		0D042B722BA10A5200EC25AE /* defualt_AppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "defualt_AppIcon@2x.png"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Yamak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yamak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Yamak/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Yamak/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Yamak/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Yamak/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Yamak/main.m; sourceTree = "<group>"; };
+		1BB9FC47660D23093D6FEDE2 /* Pods-Yamak-Yamak-Stage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yamak-Yamak-Stage.debug.xcconfig"; path = "Target Support Files/Pods-Yamak-Yamak-Stage/Pods-Yamak-Yamak-Stage.debug.xcconfig"; sourceTree = "<group>"; };
+		23DFD69DC5C203DA825F3430 /* Pods-Yamak-Yamak-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yamak-Yamak-Dev.release.xcconfig"; path = "Target Support Files/Pods-Yamak-Yamak-Dev/Pods-Yamak-Yamak-Dev.release.xcconfig"; sourceTree = "<group>"; };
+		27CE7AE1E97046DD946AF644 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		43F1FD7AFC2F4C2B9BFD1E69 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../src/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		598D6694FC67CB0995EA855A /* libPods-Yamak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Yamak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6560A3CFA1654910BB9E3C0D /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../src/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		6EC2C3B9679BB46943FADD08 /* libPods-Yamak-Yamak-Dev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Yamak-Yamak-Dev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CD965A60D51E32D69DC2FDD /* Pods-Yamak-Yamak-Stage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yamak-Yamak-Stage.release.xcconfig"; path = "Target Support Files/Pods-Yamak-Yamak-Stage/Pods-Yamak-Yamak-Stage.release.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Yamak/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83807D9A3C9E4EF68AE751F7 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../src/assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		924543781C379D9571ABBFE1 /* Pods-Yamak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yamak.debug.xcconfig"; path = "Target Support Files/Pods-Yamak/Pods-Yamak.debug.xcconfig"; sourceTree = "<group>"; };
+		9F8C43704E0741998EEDEBC7 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../src/assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		A0D90ECF27EE17770754D707 /* Pods-Yamak-Yamak-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yamak-Yamak-Dev.debug.xcconfig"; path = "Target Support Files/Pods-Yamak-Yamak-Dev/Pods-Yamak-Yamak-Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		A1CEBAB1AD744F78B4DC72B3 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		A2981234E1194C52A8AD8E80 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../src/assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C02FE379846B632768E3E4E4 /* Pods-Yamak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yamak.release.xcconfig"; path = "Target Support Files/Pods-Yamak/Pods-Yamak.release.xcconfig"; sourceTree = "<group>"; };
+		CDD64E8D00B242B1A71F9443 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		D846AA17669A43BF938E7A5B /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../src/assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E815023826AFEF52AD4C3C3A /* libPods-Yamak-Yamak-Stage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Yamak-Yamak-Stage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE484CA4AF594579A98AF1DC /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../src/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		EE75EDDFCF4B4FF9A3278E64 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../src/assets/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		FBD891B427DC4809AB7B41DD /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../src/assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		042DFB1A2B26CA6A0076AD2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B64EECB366DACF10F70669D /* libPods-Yamak-Yamak-Dev.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042DFB4D2B26E2D00076AD2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B3E73F4B3F112A1032A6EC7 /* libPods-Yamak-Yamak-Stage.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784C864A900A10C67545AE21 /* libPods-Yamak.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* YamakTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* YamakTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = YamakTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		047215B12B23BF32005E22A7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				047215B22B23BF32005E22A7 /* Fontisto.ttf */,
+				047215B32B23BF32005E22A7 /* Octicons.ttf */,
+				047215B42B23BF32005E22A7 /* Feather.ttf */,
+				047215B52B23BF32005E22A7 /* FontAwesome6_Regular.ttf */,
+				047215B62B23BF32005E22A7 /* Entypo.ttf */,
+				047215B72B23BF32005E22A7 /* FontAwesome5_Brands.ttf */,
+				047215B82B23BF32005E22A7 /* MaterialCommunityIcons.ttf */,
+				047215B92B23BF32005E22A7 /* AntDesign.ttf */,
+				047215BA2B23BF32005E22A7 /* Foundation.ttf */,
+				047215BB2B23BF32005E22A7 /* Ionicons.ttf */,
+				047215BC2B23BF32005E22A7 /* FontAwesome5_Solid.ttf */,
+				047215BD2B23BF32005E22A7 /* FontAwesome5_Regular.ttf */,
+				047215BE2B23BF32005E22A7 /* FontAwesome.ttf */,
+				047215BF2B23BF32005E22A7 /* Zocial.ttf */,
+				047215C02B23BF32005E22A7 /* EvilIcons.ttf */,
+				047215C12B23BF32005E22A7 /* FontAwesome6_Solid.ttf */,
+				047215C22B23BF32005E22A7 /* SimpleLineIcons.ttf */,
+				047215C32B23BF32005E22A7 /* FontAwesome6_Brands.ttf */,
+				047215C42B23BF32005E22A7 /* MaterialIcons.ttf */,
+			);
+			name = Fonts;
+			path = "../node_modules/react-native-vector-icons/Fonts";
+			sourceTree = "<group>";
+		};
+		04BF3E222B279E3400425A8F /* Google_Service */ = {
+			isa = PBXGroup;
+			children = (
+				04BF3E272B27A1C700425A8F /* dev */,
+				04BF3E262B27A1C000425A8F /* prod */,
+			);
+			path = Google_Service;
+			sourceTree = "<group>";
+		};
+		04BF3E262B27A1C000425A8F /* prod */ = {
+			isa = PBXGroup;
+			children = (
+				0BC951BC2B484C8000ACDDF2 /* GoogleService-Info.plist */,
+			);
+			path = prod;
+			sourceTree = "<group>";
+		};
+		04BF3E272B27A1C700425A8F /* dev */ = {
+			isa = PBXGroup;
+			children = (
+				0B22DE222B35E531006DDB64 /* GoogleService-Info.plist */,
+			);
+			path = dev;
+			sourceTree = "<group>";
+		};
+		0D4204442B9FDA92004AF74C /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				0D042B722BA10A5200EC25AE /* defualt_AppIcon@2x.png */,
+				0D042B712BA10A5200EC25AE /* defualt_AppIcon@3x.png */,
+				0D042B6F2BA10A5200EC25AE /* Ramadan_AppIcon@2x.png */,
+				0D042B702BA10A5200EC25AE /* Ramadan_AppIcon@3x.png */,
+			);
+			path = AppIcons;
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* Yamak */ = {
+			isa = PBXGroup;
+			children = (
+				0D4204442B9FDA92004AF74C /* AppIcons */,
+				043DDDC72B262E1000BAF67F /* Yamak.entitlements */,
+				047215B12B23BF32005E22A7 /* Fonts */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = Yamak;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				598D6694FC67CB0995EA855A /* libPods-Yamak.a */,
+				6EC2C3B9679BB46943FADD08 /* libPods-Yamak-Yamak-Dev.a */,
+				E815023826AFEF52AD4C3C3A /* libPods-Yamak-Yamak-Stage.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50EC0926D8E24E4ABD3E8E09 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE484CA4AF594579A98AF1DC /* Roboto-Black.ttf */,
+				83807D9A3C9E4EF68AE751F7 /* Roboto-BlackItalic.ttf */,
+				CDD64E8D00B242B1A71F9443 /* Roboto-Bold.ttf */,
+				A2981234E1194C52A8AD8E80 /* Roboto-BoldItalic.ttf */,
+				9F8C43704E0741998EEDEBC7 /* Roboto-Italic.ttf */,
+				6560A3CFA1654910BB9E3C0D /* Roboto-Light.ttf */,
+				EE75EDDFCF4B4FF9A3278E64 /* Roboto-LightItalic.ttf */,
+				A1CEBAB1AD744F78B4DC72B3 /* Roboto-Medium.ttf */,
+				D846AA17669A43BF938E7A5B /* Roboto-MediumItalic.ttf */,
+				27CE7AE1E97046DD946AF644 /* Roboto-Regular.ttf */,
+				43F1FD7AFC2F4C2B9BFD1E69 /* Roboto-Thin.ttf */,
+				FBD891B427DC4809AB7B41DD /* Roboto-ThinItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				0B57F07A2B380D600024997A /* Yamak-Dev.entitlements */,
+				04BF3E222B279E3400425A8F /* Google_Service */,
+				13B07FAE1A68108700A75B9A /* Yamak */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* YamakTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				50EC0926D8E24E4ABD3E8E09 /* Resources */,
+				042DFB462B26CA6A0076AD2F /* Yamak dev-Info.plist */,
+				042DFB792B26E2D10076AD2F /* Yamak Stage-Info.plist */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* Yamak.app */,
+				042DFB452B26CA6A0076AD2F /* Yamak-Dev.app */,
+				042DFB782B26E2D10076AD2F /* Yamak-Stage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				924543781C379D9571ABBFE1 /* Pods-Yamak.debug.xcconfig */,
+				C02FE379846B632768E3E4E4 /* Pods-Yamak.release.xcconfig */,
+				A0D90ECF27EE17770754D707 /* Pods-Yamak-Yamak-Dev.debug.xcconfig */,
+				23DFD69DC5C203DA825F3430 /* Pods-Yamak-Yamak-Dev.release.xcconfig */,
+				1BB9FC47660D23093D6FEDE2 /* Pods-Yamak-Yamak-Stage.debug.xcconfig */,
+				7CD965A60D51E32D69DC2FDD /* Pods-Yamak-Yamak-Stage.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		042DFB142B26CA6A0076AD2F /* Yamak-Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042DFB422B26CA6A0076AD2F /* Build configuration list for PBXNativeTarget "Yamak-Dev" */;
+			buildPhases = (
+				68BB21FB72D97F786733EA6F /* [CP] Check Pods Manifest.lock */,
+				042DFB162B26CA6A0076AD2F /* Start Packager */,
+				042DFB172B26CA6A0076AD2F /* Sources */,
+				042DFB1A2B26CA6A0076AD2F /* Frameworks */,
+				042DFB1C2B26CA6A0076AD2F /* Resources */,
+				042DFB3E2B26CA6A0076AD2F /* Bundle React Native code and images */,
+				4C9BA541B812C2E50431947A /* [CP] Embed Pods Frameworks */,
+				14FBCE2ADA63175F23FCBBD9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yamak-Dev";
+			productName = Yamak;
+			productReference = 042DFB452B26CA6A0076AD2F /* Yamak-Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		042DFB472B26E2D00076AD2F /* Yamak-Stage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042DFB752B26E2D00076AD2F /* Build configuration list for PBXNativeTarget "Yamak-Stage" */;
+			buildPhases = (
+				283F318FBBBFB96FE4F51176 /* [CP] Check Pods Manifest.lock */,
+				042DFB492B26E2D00076AD2F /* Start Packager */,
+				042DFB4A2B26E2D00076AD2F /* Sources */,
+				042DFB4D2B26E2D00076AD2F /* Frameworks */,
+				042DFB4F2B26E2D00076AD2F /* Resources */,
+				042DFB712B26E2D00076AD2F /* Bundle React Native code and images */,
+				46EBF2F84ABBC16BE64749A1 /* [CP] Embed Pods Frameworks */,
+				FA0675F7C4351191432E700C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yamak-Stage";
+			productName = Yamak;
+			productReference = 042DFB782B26E2D10076AD2F /* Yamak-Stage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13B07F861A680F5B00A75B9A /* Yamak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Yamak" */;
+			buildPhases = (
+				0195EE037ED5552618209C5A /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				8A1C4C7CEE01363AE351FD44 /* [CP] Embed Pods Frameworks */,
+				49CCBF686FBB3C07C5C28975 /* [CP] Copy Pods Resources */,
+				D9479870904C6360B78EC627 /* [CP-User] [RNFB] Core Configuration */,
+				73553F475E13411A864649DE /* Upload Debug Symbols to Sentry */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yamak;
+			productName = Yamak;
+			productReference = 13B07F961A680F5B00A75B9A /* Yamak.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Yamak" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* Yamak */,
+				042DFB142B26CA6A0076AD2F /* Yamak-Dev */,
+				042DFB472B26E2D00076AD2F /* Yamak-Stage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		042DFB1C2B26CA6A0076AD2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042DFB1D2B26CA6A0076AD2F /* EvilIcons.ttf in Resources */,
+				042DFB1E2B26CA6A0076AD2F /* LaunchScreen.storyboard in Resources */,
+				042DFB1F2B26CA6A0076AD2F /* MaterialCommunityIcons.ttf in Resources */,
+				042DFB202B26CA6A0076AD2F /* FontAwesome5_Regular.ttf in Resources */,
+				042DFB212B26CA6A0076AD2F /* FontAwesome6_Solid.ttf in Resources */,
+				042DFB222B26CA6A0076AD2F /* Ionicons.ttf in Resources */,
+				042DFB232B26CA6A0076AD2F /* Images.xcassets in Resources */,
+				042DFB242B26CA6A0076AD2F /* Roboto-Black.ttf in Resources */,
+				042DFB252B26CA6A0076AD2F /* Roboto-BlackItalic.ttf in Resources */,
+				042DFB262B26CA6A0076AD2F /* Roboto-Bold.ttf in Resources */,
+				042DFB272B26CA6A0076AD2F /* FontAwesome6_Brands.ttf in Resources */,
+				042DFB282B26CA6A0076AD2F /* Foundation.ttf in Resources */,
+				042DFB292B26CA6A0076AD2F /* FontAwesome6_Regular.ttf in Resources */,
+				042DFB2A2B26CA6A0076AD2F /* Entypo.ttf in Resources */,
+				042DFB2B2B26CA6A0076AD2F /* FontAwesome5_Solid.ttf in Resources */,
+				042DFB2C2B26CA6A0076AD2F /* Roboto-BoldItalic.ttf in Resources */,
+				042DFB2D2B26CA6A0076AD2F /* Roboto-Italic.ttf in Resources */,
+				042DFB2E2B26CA6A0076AD2F /* MaterialIcons.ttf in Resources */,
+				042DFB2F2B26CA6A0076AD2F /* FontAwesome5_Brands.ttf in Resources */,
+				042DFB302B26CA6A0076AD2F /* Roboto-Light.ttf in Resources */,
+				042DFB312B26CA6A0076AD2F /* Roboto-LightItalic.ttf in Resources */,
+				042DFB322B26CA6A0076AD2F /* Roboto-Medium.ttf in Resources */,
+				042DFB332B26CA6A0076AD2F /* Feather.ttf in Resources */,
+				042DFB342B26CA6A0076AD2F /* Octicons.ttf in Resources */,
+				042DFB352B26CA6A0076AD2F /* Zocial.ttf in Resources */,
+				042DFB362B26CA6A0076AD2F /* Roboto-MediumItalic.ttf in Resources */,
+				042DFB372B26CA6A0076AD2F /* Roboto-Regular.ttf in Resources */,
+				042DFB382B26CA6A0076AD2F /* Fontisto.ttf in Resources */,
+				042DFB392B26CA6A0076AD2F /* SimpleLineIcons.ttf in Resources */,
+				0B22DE232B35E531006DDB64 /* GoogleService-Info.plist in Resources */,
+				042DFB3A2B26CA6A0076AD2F /* FontAwesome.ttf in Resources */,
+				042DFB3B2B26CA6A0076AD2F /* Roboto-Thin.ttf in Resources */,
+				042DFB3C2B26CA6A0076AD2F /* AntDesign.ttf in Resources */,
+				042DFB3D2B26CA6A0076AD2F /* Roboto-ThinItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042DFB4F2B26E2D00076AD2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042DFB502B26E2D00076AD2F /* EvilIcons.ttf in Resources */,
+				042DFB512B26E2D00076AD2F /* LaunchScreen.storyboard in Resources */,
+				042DFB522B26E2D00076AD2F /* MaterialCommunityIcons.ttf in Resources */,
+				042DFB532B26E2D00076AD2F /* FontAwesome5_Regular.ttf in Resources */,
+				042DFB542B26E2D00076AD2F /* FontAwesome6_Solid.ttf in Resources */,
+				042DFB552B26E2D00076AD2F /* Ionicons.ttf in Resources */,
+				042DFB562B26E2D00076AD2F /* Images.xcassets in Resources */,
+				042DFB572B26E2D00076AD2F /* Roboto-Black.ttf in Resources */,
+				042DFB582B26E2D00076AD2F /* Roboto-BlackItalic.ttf in Resources */,
+				042DFB592B26E2D00076AD2F /* Roboto-Bold.ttf in Resources */,
+				042DFB5A2B26E2D00076AD2F /* FontAwesome6_Brands.ttf in Resources */,
+				042DFB5B2B26E2D00076AD2F /* Foundation.ttf in Resources */,
+				042DFB5C2B26E2D00076AD2F /* FontAwesome6_Regular.ttf in Resources */,
+				042DFB5D2B26E2D00076AD2F /* Entypo.ttf in Resources */,
+				042DFB5E2B26E2D00076AD2F /* FontAwesome5_Solid.ttf in Resources */,
+				042DFB5F2B26E2D00076AD2F /* Roboto-BoldItalic.ttf in Resources */,
+				042DFB602B26E2D00076AD2F /* Roboto-Italic.ttf in Resources */,
+				042DFB612B26E2D00076AD2F /* MaterialIcons.ttf in Resources */,
+				042DFB622B26E2D00076AD2F /* FontAwesome5_Brands.ttf in Resources */,
+				042DFB632B26E2D00076AD2F /* Roboto-Light.ttf in Resources */,
+				042DFB642B26E2D00076AD2F /* Roboto-LightItalic.ttf in Resources */,
+				042DFB652B26E2D00076AD2F /* Roboto-Medium.ttf in Resources */,
+				042DFB662B26E2D00076AD2F /* Feather.ttf in Resources */,
+				042DFB672B26E2D00076AD2F /* Octicons.ttf in Resources */,
+				042DFB682B26E2D00076AD2F /* Zocial.ttf in Resources */,
+				042DFB692B26E2D00076AD2F /* Roboto-MediumItalic.ttf in Resources */,
+				042DFB6A2B26E2D00076AD2F /* Roboto-Regular.ttf in Resources */,
+				042DFB6B2B26E2D00076AD2F /* Fontisto.ttf in Resources */,
+				042DFB6C2B26E2D00076AD2F /* SimpleLineIcons.ttf in Resources */,
+				042DFB6D2B26E2D00076AD2F /* FontAwesome.ttf in Resources */,
+				042DFB6E2B26E2D00076AD2F /* Roboto-Thin.ttf in Resources */,
+				042DFB6F2B26E2D00076AD2F /* AntDesign.ttf in Resources */,
+				042DFB702B26E2D00076AD2F /* Roboto-ThinItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047215D32B23BF32005E22A7 /* EvilIcons.ttf in Resources */,
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				047215CB2B23BF32005E22A7 /* MaterialCommunityIcons.ttf in Resources */,
+				0D042B752BA10A5200EC25AE /* defualt_AppIcon@3x.png in Resources */,
+				047215D02B23BF32005E22A7 /* FontAwesome5_Regular.ttf in Resources */,
+				047215D42B23BF32005E22A7 /* FontAwesome6_Solid.ttf in Resources */,
+				047215CE2B23BF32005E22A7 /* Ionicons.ttf in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				790A373F7AF84151A4804786 /* Roboto-Black.ttf in Resources */,
+				0D042B762BA10A5200EC25AE /* defualt_AppIcon@2x.png in Resources */,
+				FE74C89E23DC46619CB1DEAE /* Roboto-BlackItalic.ttf in Resources */,
+				58F57B34BB834E1BB22D76CD /* Roboto-Bold.ttf in Resources */,
+				047215D62B23BF32005E22A7 /* FontAwesome6_Brands.ttf in Resources */,
+				047215CD2B23BF32005E22A7 /* Foundation.ttf in Resources */,
+				0D042B742BA10A5200EC25AE /* Ramadan_AppIcon@3x.png in Resources */,
+				047215C82B23BF32005E22A7 /* FontAwesome6_Regular.ttf in Resources */,
+				047215C92B23BF32005E22A7 /* Entypo.ttf in Resources */,
+				047215CF2B23BF32005E22A7 /* FontAwesome5_Solid.ttf in Resources */,
+				0D042B732BA10A5200EC25AE /* Ramadan_AppIcon@2x.png in Resources */,
+				6AF57926CF124F57BACAF081 /* Roboto-BoldItalic.ttf in Resources */,
+				7B65466D42AE4E69B6C1DA15 /* Roboto-Italic.ttf in Resources */,
+				047215D72B23BF32005E22A7 /* MaterialIcons.ttf in Resources */,
+				047215CA2B23BF32005E22A7 /* FontAwesome5_Brands.ttf in Resources */,
+				D27874AB13A348519BE21B74 /* Roboto-Light.ttf in Resources */,
+				1BDF72DE2EFD4E6F8136F95C /* Roboto-LightItalic.ttf in Resources */,
+				17C6521C11884B6A8630FF59 /* Roboto-Medium.ttf in Resources */,
+				047215C72B23BF32005E22A7 /* Feather.ttf in Resources */,
+				047215C62B23BF32005E22A7 /* Octicons.ttf in Resources */,
+				047215D22B23BF32005E22A7 /* Zocial.ttf in Resources */,
+				2A5BBFA10B7D4732B6DF0505 /* Roboto-MediumItalic.ttf in Resources */,
+				603B0E0921504A5194F317AD /* Roboto-Regular.ttf in Resources */,
+				047215C52B23BF32005E22A7 /* Fontisto.ttf in Resources */,
+				047215D52B23BF32005E22A7 /* SimpleLineIcons.ttf in Resources */,
+				0BC951BD2B484C8000ACDDF2 /* GoogleService-Info.plist in Resources */,
+				047215D12B23BF32005E22A7 /* FontAwesome.ttf in Resources */,
+				0F3254F5F5E943E297B4B523 /* Roboto-Thin.ttf in Resources */,
+				047215CC2B23BF32005E22A7 /* AntDesign.ttf in Resources */,
+				184A9A3E3DE54BDAB4B93A11 /* Roboto-ThinItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT \\\"/bin/sh ../node_modules/@sentry/react-native/scripts/sentry-xcode.sh $REACT_NATIVE_XCODE\\\"\"\n";
+		};
+		0195EE037ED5552618209C5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yamak-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		042DFB162B26CA6A0076AD2F /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		042DFB3E2B26CA6A0076AD2F /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		042DFB492B26E2D00076AD2F /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		042DFB712B26E2D00076AD2F /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		14FBCE2ADA63175F23FCBBD9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yamak-Yamak-Dev/Pods-Yamak-Yamak-Dev-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yamak-Yamak-Dev/Pods-Yamak-Yamak-Dev-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yamak-Yamak-Dev/Pods-Yamak-Yamak-Dev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		283F318FBBBFB96FE4F51176 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yamak-Yamak-Stage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46EBF2F84ABBC16BE64749A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yamak-Yamak-Stage/Pods-Yamak-Yamak-Stage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yamak-Yamak-Stage/Pods-Yamak-Yamak-Stage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yamak-Yamak-Stage/Pods-Yamak-Yamak-Stage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49CCBF686FBB3C07C5C28975 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yamak/Pods-Yamak-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yamak/Pods-Yamak-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yamak/Pods-Yamak-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C9BA541B812C2E50431947A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yamak-Yamak-Dev/Pods-Yamak-Yamak-Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yamak-Yamak-Dev/Pods-Yamak-Yamak-Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yamak-Yamak-Dev/Pods-Yamak-Yamak-Dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68BB21FB72D97F786733EA6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yamak-Yamak-Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73553F475E13411A864649DE /* Upload Debug Symbols to Sentry */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Upload Debug Symbols to Sentry";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh ../node_modules/@sentry/react-native/scripts/sentry-xcode-debug-files.sh";
+		};
+		8A1C4C7CEE01363AE351FD44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yamak/Pods-Yamak-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yamak/Pods-Yamak-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yamak/Pods-Yamak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9479870904C6360B78EC627 /* [CP-User] [RNFB] Core Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[CP-User] [RNFB] Core Configuration";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | /usr/bin/head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    if ! python3 --version >/dev/null 2>&1; then echo \"python3 not found, firebase.json file processing error.\" && exit 1; fi\n    _JSON_OUTPUT_BASE64=$(python3 -c 'import json,sys,base64;print(base64.b64encode(bytes(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"', '\"'rb'\"').read())['${_JSON_ROOT}']), '\"'utf-8'\"')).decode())' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.app_data_collection_default_enabled\n  _APP_DATA_COLLECTION_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_data_collection_default_enabled\")\n  if [[ $_APP_DATA_COLLECTION_ENABLED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseDataCollectionDefaultEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_DATA_COLLECTION_ENABLED\")\")\n  fi\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.analytics_collection_deactivated\n  _ANALYTICS_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_collection_deactivated\")\n  if [[ $_ANALYTICS_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_DEACTIVATED\")\")\n  fi\n\n  # config.analytics_idfv_collection_enabled\n  _ANALYTICS_IDFV_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_idfv_collection_enabled\")\n  if [[ $_ANALYTICS_IDFV_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_IDFV_COLLECTION\")\")\n  fi\n\n  # config.analytics_default_allow_ad_personalization_signals\n  _ANALYTICS_PERSONALIZATION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_personalization_signals\")\n  if [[ $_ANALYTICS_PERSONALIZATION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_PERSONALIZATION\")\")\n  fi\n\n  # config.analytics_registration_with_ad_network_enabled\n  _ANALYTICS_REGISTRATION_WITH_AD_NETWORK=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_registration_with_ad_network_enabled\")\n  if [[ $_ANALYTICS_REGISTRATION_WITH_AD_NETWORK ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_REGISTRATION_WITH_AD_NETWORK_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_REGISTRATION_WITH_AD_NETWORK\")\")\n  fi\n\n  # config.google_analytics_automatic_screen_reporting_enabled\n  _ANALYTICS_AUTO_SCREEN_REPORTING=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_automatic_screen_reporting_enabled\")\n  if [[ $_ANALYTICS_AUTO_SCREEN_REPORTING ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAutomaticScreenReportingEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_SCREEN_REPORTING\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_collection_deactivated\n  _PERF_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_collection_deactivated\")\n  if [[ $_PERF_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_deactivated\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_DEACTIVATED\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.in_app_messaging_auto_colllection_enabled\n  _FIAM_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"in_app_messaging_auto_collection_enabled\")\n  if [[ $_FIAM_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseInAppMessagingAutomaticDataCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_FIAM_AUTO_INIT\")\")\n  fi\n\n  # config.app_check_token_auto_refresh\n  _APP_CHECK_TOKEN_AUTO_REFRESH=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_check_token_auto_refresh\")\n  if [[ $_APP_CHECK_TOKEN_AUTO_REFRESH ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAppCheckTokenAutoRefreshEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_CHECK_TOKEN_AUTO_REFRESH\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
+		};
+		FA0675F7C4351191432E700C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yamak-Yamak-Stage/Pods-Yamak-Yamak-Stage-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yamak-Yamak-Stage/Pods-Yamak-Yamak-Stage-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yamak-Yamak-Stage/Pods-Yamak-Yamak-Stage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		042DFB172B26CA6A0076AD2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042DFB182B26CA6A0076AD2F /* AppDelegate.mm in Sources */,
+				042DFB192B26CA6A0076AD2F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042DFB4A2B26E2D00076AD2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042DFB4B2B26E2D00076AD2F /* AppDelegate.mm in Sources */,
+				042DFB4C2B26E2D00076AD2F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		042DFB432B26CA6A0076AD2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D90ECF27EE17770754D707 /* Pods-Yamak-Yamak-Dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = App_dev;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Yamak-Dev.entitlements";
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = GBT2N5V28S;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Yamak dev-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yamak.mobdev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		042DFB442B26CA6A0076AD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23DFD69DC5C203DA825F3430 /* Pods-Yamak-Yamak-Dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = App_dev;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Yamak-Dev.entitlements";
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = GBT2N5V28S;
+				INFOPLIST_FILE = "Yamak dev-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yamak.mobdev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		042DFB762B26E2D00076AD2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB9FC47660D23093D6FEDE2 /* Pods-Yamak-Yamak-Stage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-stage";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = GBT2N5V28S;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Yamak Stage-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yamak.mobstage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		042DFB772B26E2D00076AD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CD965A60D51E32D69DC2FDD /* Pods-Yamak-Yamak-Stage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-stage";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = GBT2N5V28S;
+				INFOPLIST_FILE = "Yamak Stage-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yamak.mobstage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 924543781C379D9571ABBFE1 /* Pods-Yamak.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Yamak/Yamak.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 19;
+				DEVELOPMENT_TEAM = GBT2N5V28S;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Yamak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.5;
+				NEW_SETTING = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yamak.mobapp;
+				PRODUCT_NAME = Yamak;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C02FE379846B632768E3E4E4 /* Pods-Yamak.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Yamak/Yamak.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 19;
+				DEVELOPMENT_TEAM = GBT2N5V28S;
+				INFOPLIST_FILE = Yamak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.5;
+				NEW_SETTING = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yamak.mobapp;
+				PRODUCT_NAME = Yamak;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Wl",
+					"-ld_classic",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Wl",
+					"-ld_classic",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		042DFB422B26CA6A0076AD2F /* Build configuration list for PBXNativeTarget "Yamak-Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042DFB432B26CA6A0076AD2F /* Debug */,
+				042DFB442B26CA6A0076AD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042DFB752B26E2D00076AD2F /* Build configuration list for PBXNativeTarget "Yamak-Stage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042DFB762B26E2D00076AD2F /* Debug */,
+				042DFB772B26E2D00076AD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Yamak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Yamak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "555986993443",
+    "project_id": "yamak-kw-dev",
+    "storage_bucket": "yamak-kw-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555986993443:android:b8d3fb84a38015e0b40c96",
+        "android_client_info": {
+          "package_name": "com.yamak.mobdev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555986993443-0upnqm9ujnr4hic7eld7fc225fajeq5u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yamak.mobdev",
+            "certificate_hash": "edf6adf4adcf19130368e9e61e7898caa13e86fd"
+          }
+        },
+        {
+          "client_id": "555986993443-eu98lvsa7dgtge5r3c64sjj0m4jh6ebi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_PPm4WmWOW03wE5E8PJGYzffLQdI25l4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555986993443-3m0pft90v9s983vvl9h0mlr8ovan9gl1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "555986993443-34pd11574l1ulr2dlg59cl165kul9mcq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.yamak.mobdev"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

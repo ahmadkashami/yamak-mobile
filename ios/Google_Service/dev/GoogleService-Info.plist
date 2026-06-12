@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>555986993443-34pd11574l1ulr2dlg59cl165kul9mcq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.555986993443-34pd11574l1ulr2dlg59cl165kul9mcq</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>555986993443-0upnqm9ujnr4hic7eld7fc225fajeq5u.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC1M3Io_yRcOzTWIWkkJ3ydK1wzwgS47lo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>555986993443</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.yamak.mobdev</string>
+	<key>PROJECT_ID</key>
+	<string>yamak-kw-dev</string>
+	<key>STORAGE_BUCKET</key>
+	<string>yamak-kw-dev.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:555986993443:ios:b2ff769612cabd46b40c96</string>
+</dict>
+</plist>
