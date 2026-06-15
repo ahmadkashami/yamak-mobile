@@ -22,7 +22,7 @@ import FillledButton from "../ui/FillledButton";
 import { AuthContext } from "../../store/auth-context";
 import KeyBordAvoidingWraper from "../ui/KeyBordAvoidingWraper";
 import { useTranslation } from "react-i18next";
-import { login } from "../../apis/Auth.api";
+
 import { AppColors } from "../../constants/Colors";
 
 const CodeAuthModel: FC<any> = ({

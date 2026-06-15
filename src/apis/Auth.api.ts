@@ -1,17 +1,15 @@
-import { client, makeApiCall } from "./axios.config";
+import { makeApiCall } from "./axios.config";
 
 export const register = async (name: string, email: string, phone: string) => {
   phone = phone.includes("+") ? phone.substring(1) : phone;
-  const body = { name, email, phone: "96566917955", password: "123342424" };
-  const response = await client.post("/api/mobile/client/v1/register", body);
-  return response.data;
+  const body = { name, email, phone };
+  const response = await makeApiCall({ url: "auth/signup", data: body, method: "post" });
+  return response;
 };
 
-export const login = async (phone: number) => {
-  const body = { phone };
-  // const response = await client.post("auth/api/mobile/client/v1/login", body);
-  const response = await makeApiCall({ url: "auth/login", data: body, method: "post" })
-
+export const login = async ({ email, password }: { email: string, password: string }) => {
+  const body = { email, password };
+  const response = await makeApiCall({ url: "auth/login", data: body, method: "post" });
   return response;
 };
 
