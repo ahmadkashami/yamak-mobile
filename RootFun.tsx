@@ -12,6 +12,8 @@ import { getStorageValues, setStorageValues } from "./src/helpers/AppAsyncStorea
 import { AsyncStorageConstants, isIos } from "./src/constants/CommonConsstats";
 import { getAppSetting } from "./src/apis/common.api";
 import { useAppReady } from "./src/hooks/useAppReady";
+import useNotification from "./src/notification/useNotification";
+import { updateUserPushToken } from "./src/apis/users.api";
 
 
 
@@ -21,15 +23,33 @@ export function RootFun() {
     const setAppSetting = useAppReadyStore((state) => state.setAppSetting)
     const token = useAuthenticationStoreAsync((state) => state.token)
     const { appIsReady } = useAppReady()
-
-
-    // throw new Error('My first Sentry error!');
+    const { checkApplicationNotificationPermission } = useNotification()
 
     useEffect(() => {
         getStorageItem();
         callAppApis();
         setAppIconImage()
     }, [])
+
+    useEffect(() => {
+        if (token) {
+            registerPushToken();
+        }
+    }, [token])
+
+    async function registerPushToken() {
+        try {
+            await checkApplicationNotificationPermission();
+            const stored = await getStorageValues(AsyncStorageConstants.fcmToken);
+            if (stored) {
+                const fcmToken = JSON.parse(stored);
+                await updateUserPushToken(fcmToken);
+                console.log('Push token registered with backend');
+            }
+        } catch (error) {
+            console.log('Push token registration error:', error);
+        }
+    }
 
     const setAppIconImage = async () => {
         try {
