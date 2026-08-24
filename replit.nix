@@ -1,5 +1,12 @@
 {pkgs}: {
   deps = [
+    pkgs.alsa-lib
+    pkgs.libxkbcommon
+    pkgs.xorg.libxcb
+    pkgs.libgbm
+    pkgs.mesa
+    pkgs.xorg.libXrandr
+    pkgs.xorg.libXfixes
     pkgs.xorg.libXext
     pkgs.xorg.libXdamage
     pkgs.xorg.libXcomposite
