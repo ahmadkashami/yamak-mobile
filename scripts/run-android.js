@@ -7,6 +7,7 @@ const { spawnSync } = require('child_process');
 const root = path.resolve(__dirname, '..');
 const androidDir = path.join(root, 'android');
 const env = { ...process.env };
+const isWindows = process.platform === 'win32';
 
 function prependExisting(...entries) {
   const existing = entries.filter(Boolean).filter((entry) => fs.existsSync(entry));
@@ -35,8 +36,14 @@ function findWindowsJdk17() {
   return undefined;
 }
 
+prependExisting(path.dirname(process.execPath));
+
+if (isWindows && !env.GRADLE_USER_HOME && env.USERPROFILE) {
+  env.GRADLE_USER_HOME = path.join(env.USERPROFILE, '.gradle');
+}
+
 const localAndroidSdk =
-  process.platform === 'win32' && env.LOCALAPPDATA
+  isWindows && env.LOCALAPPDATA
     ? path.join(env.LOCALAPPDATA, 'Android', 'Sdk')
     : undefined;
 const androidSdk = env.ANDROID_HOME || env.ANDROID_SDK_ROOT || localAndroidSdk;
@@ -53,7 +60,7 @@ if (androidSdk && fs.existsSync(androidSdk)) {
 
 if (env.JAVA_HOME) {
   prependExisting(path.join(env.JAVA_HOME, 'bin'));
-} else if (process.platform === 'win32') {
+} else if (isWindows) {
   const jdk17 = findWindowsJdk17();
   if (jdk17) {
     env.JAVA_HOME = jdk17;
@@ -67,6 +74,12 @@ const args = process.argv.slice(2);
 const hasPortArg = args.some((arg, index) => arg === '--port' || arg.startsWith('--port=') || args[index - 1] === '--port');
 if (!env.RCT_METRO_PORT && !hasPortArg) {
   env.RCT_METRO_PORT = '8082';
+}
+
+const hasModeArg = args.some((arg, index) => arg === '--mode' || arg.startsWith('--mode=') || args[index - 1] === '--mode');
+const hasVariantArg = args.some((arg, index) => arg === '--variant' || arg.startsWith('--variant=') || args[index - 1] === '--variant');
+if (!hasModeArg && !hasVariantArg) {
+  args.unshift('--mode=developmentdebug');
 }
 
 const cli = require.resolve('react-native/cli.js', { paths: [root] });
