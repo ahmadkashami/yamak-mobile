@@ -12,10 +12,9 @@ import { getStorageValues } from "../helpers/AppAsyncStoreage";
 // const baseUrl = "http://192.168.1.111:8000/api/mobile/v1/"
 //phone a33
 // const baseUrl = "http://192.168.131.228:8000/api/mobile/v1/"
-//replit dev backend
-const devBackendUrl = "https://1a4fa7fa-aae9-463a-962c-91a64c55a7fd-00-3lcrqeg4xjn06.pike.replit.dev/api/mobile/v1/"
 //server (production)
-const baseUrl = process.env.EXPO_PUBLIC_API_PRO || devBackendUrl
+const productionBackendUrl = "https://yamak-kw.com/api/mobile/v1/"
+const baseUrl = process.env.EXPO_PUBLIC_API_PRO || productionBackendUrl
 
 
 
@@ -63,7 +62,7 @@ const setAuthorizationHeader = async (config: any) => {
 const setDynamicBaseURL = async (config) => {
   let baseURL = await AsyncStorage.getItem(AsyncStorageConstants.env);
   baseURL = baseURL ? JSON.parse(baseURL)?.url : null
-  config.baseURL = baseURL || devBackendUrl
+  config.baseURL = baseURL || baseUrl
   return config;
 };
 

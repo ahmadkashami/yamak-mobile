@@ -11,8 +11,6 @@ import { AsyncStorageConstants } from '../../constants/CommonConsstats';
 const AppPickerEnvModal = ({ isOpen, setIsOpen, setIsIpModalOpen }) => {
     const values = [
         { name: "prod", url: "https://yamak-kw.com/api/mobile/v1/" },
-        { name: "staging", url: "https://1a4fa7fa-aae9-463a-962c-91a64c55a7fd-00-3lcrqeg4xjn06.pike.replit.dev/api/mobile/v1/" },
-        { name: "development", url: "https://1a4fa7fa-aae9-463a-962c-91a64c55a7fd-00-3lcrqeg4xjn06.pike.replit.dev/api/mobile/v1/" },
     ]
 
 
