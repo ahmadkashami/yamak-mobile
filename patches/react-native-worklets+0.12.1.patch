@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-worklets/android/CMakeLists.txt b/node_modules/react-native-worklets/android/CMakeLists.txt
+index b5edd6b..945d39d 100644
+--- a/node_modules/react-native-worklets/android/CMakeLists.txt
++++ b/node_modules/react-native-worklets/android/CMakeLists.txt
+@@ -2,6 +2,8 @@ project(Worklets)
+ cmake_minimum_required(VERSION 3.16)
+ 
+ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
++set(CMAKE_NINJA_FORCE_RESPONSE_FILE ON CACHE BOOL
++    "Force Ninja to use response files for long Windows command lines")
+ 
+ set(CMAKE_CXX_STANDARD 20)
+ 

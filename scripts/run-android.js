@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
+const net = require('net');
 const path = require('path');
 const { spawnSync } = require('child_process');
 
@@ -36,7 +37,38 @@ function findWindowsJdk17() {
   return undefined;
 }
 
+function getArgValue(args, name) {
+  for (let index = 0; index < args.length; index += 1) {
+    const arg = args[index];
+    if (arg === name) return args[index + 1];
+    if (arg.startsWith(`${name}=`)) return arg.slice(name.length + 1);
+  }
+
+  return undefined;
+}
+
+function isPortListening(port) {
+  return new Promise((resolve) => {
+    const socket = net.createConnection({ host: '127.0.0.1', port });
+    let settled = false;
+
+    function done(value) {
+      if (settled) return;
+      settled = true;
+      socket.destroy();
+      resolve(value);
+    }
+
+    socket.setTimeout(500);
+    socket.once('connect', () => done(true));
+    socket.once('timeout', () => done(false));
+    socket.once('error', () => done(false));
+  });
+}
+
 prependExisting(path.dirname(process.execPath));
+env.NODE_BINARY = env.NODE_BINARY || process.execPath;
+env.CMAKE_BUILD_PARALLEL_LEVEL = env.CMAKE_BUILD_PARALLEL_LEVEL || '1';
 
 if (isWindows && !env.GRADLE_USER_HOME && env.USERPROFILE) {
   env.GRADLE_USER_HOME = path.join(env.USERPROFILE, '.gradle');
@@ -82,11 +114,31 @@ if (!hasModeArg && !hasVariantArg) {
   args.unshift('--mode=developmentdebug');
 }
 
-const cli = require.resolve('react-native/cli.js', { paths: [root] });
-const result = spawnSync(process.execPath, [cli, 'run-android', ...args], {
-  cwd: root,
-  env,
-  stdio: 'inherit',
-});
+const buildMode = getArgValue(args, '--mode') || getArgValue(args, '--variant') || '';
+const isDebugBuild = !buildMode || /debug$/i.test(buildMode);
+if (isDebugBuild && !args.includes('--active-arch-only')) {
+  args.push('--active-arch-only');
+}
 
-process.exit(result.status ?? 1);
+async function main() {
+  const metroPort = Number(getArgValue(args, '--port') || env.RCT_METRO_PORT || 8082);
+  const hasPackagerArg = args.some((arg) => arg === '--no-packager' || arg === '--packager');
+
+  if (!hasPackagerArg && Number.isInteger(metroPort) && await isPortListening(metroPort)) {
+    args.push('--no-packager');
+  }
+
+  const cli = require.resolve('react-native/cli.js', { paths: [root] });
+  const result = spawnSync(process.execPath, [cli, 'run-android', ...args], {
+    cwd: root,
+    env,
+    stdio: 'inherit',
+  });
+
+  process.exit(result.status ?? 1);
+}
+
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
