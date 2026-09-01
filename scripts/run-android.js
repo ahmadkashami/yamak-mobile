@@ -115,6 +115,21 @@ if (!hasModeArg && !hasVariantArg) {
 }
 
 const buildMode = getArgValue(args, '--mode') || getArgValue(args, '--variant') || '';
+const applicationIds = {
+  development: 'com.yamak.mobdev',
+  staging: 'com.yamak.mobstaging',
+  production: 'com.yamak.mobapp',
+};
+const selectedFlavor = Object.keys(applicationIds).find((flavor) =>
+  buildMode.toLowerCase().startsWith(flavor),
+);
+const hasAppIdArg = args.some(
+  (arg, index) => arg === '--appId' || arg.startsWith('--appId=') || args[index - 1] === '--appId',
+);
+if (selectedFlavor && !hasAppIdArg) {
+  args.push(`--appId=${applicationIds[selectedFlavor]}`);
+}
+
 const isDebugBuild = !buildMode || /debug$/i.test(buildMode);
 if (isDebugBuild && !args.includes('--active-arch-only')) {
   args.push('--active-arch-only');

@@ -57,25 +57,6 @@ jest.mock('@react-native-community/netinfo', () => ({
   ),
 }));
 
-jest.mock('react-native-snap-carousel', () => {
-  const React = require('react');
-  const {View} = require('react-native');
-
-  return function MockCarousel({data = [], renderItem}) {
-    return React.createElement(
-      View,
-      null,
-      data.map((item, index) =>
-        React.createElement(
-          View,
-          {key: item?.id ?? item?._id ?? index},
-          renderItem?.({item, index}),
-        ),
-      ),
-    );
-  };
-});
-
 jest.mock('@react-native-clipboard/clipboard', () => ({
   __esModule: true,
   default: {
