@@ -10,7 +10,7 @@ Bare React Native mobile application for Yamak's customer-facing services, inclu
 
 ## Tech Stack
 
-- Mobile: React Native 0.86.0, React 19, TypeScript, native Android and iOS projects
+- Mobile: React Native 0.87.1, React 19, TypeScript, native Android and iOS projects
 - Android: Java, Gradle, Android Gradle Plugin 8.7.0, SDK 36, minimum SDK 24, Hermes
 - iOS: Objective-C++, Xcode project and CocoaPods, minimum iOS 15.1
 - State and data: Zustand, TanStack Query, Axios, Formik, Yup
@@ -78,7 +78,7 @@ No local application database schema or server-side models are present. Persiste
 
 ## Current Migration / Development Status
 
-- React Native is at 0.86.0.
+- React Native is at 0.87.1 in both `package.json` and the installed package; native build compatibility was not verified during the launcher fix.
 - The Home advertising carousel uses the React Native core `FlatList`; the obsolete `react-native-snap-carousel` dependency and compatibility patch have been removed.
 - Android has development, staging, and production product flavors.
 - iOS has Yamak-Dev, Yamak-Stage, and Yamak targets/schemes.
@@ -98,7 +98,7 @@ No local application database schema or server-side models are present. Persiste
 
 - No staging Firebase `google-services.json` or `GoogleService-Info.plist` is present; do not fabricate these files.
 - The development and staging iOS Info.plists do not currently declare a Google Sign-In reversed-client-ID URL scheme. Production does.
-- Android native and JavaScript startup are stable; the development build reached the Arabic login screen through Metro on port 8082 during the 2026-08-31 verification.
+- The 2026-08-31 development build reached the Arabic login screen through Metro on port 8082. Current RN 0.87.1 x86_64 builds are blocked by intermittent `clang++.exe` process launch denial in Reanimated; the earlier startup result does not validate the current build.
 - Live Home carousel interaction remains unverified because the emulator has no authenticated session or supplied test credentials. The unrelated startup API rejection `Cannot read property 'data' of undefined` remains present.
 - Existing Gradle deprecation and npm peer dependency warnings are outside the current identifier work.
 
@@ -118,6 +118,12 @@ npm run lint
 For iOS native dependencies, run `pod install` from `ios/` on macOS before building in Xcode.
 
 ## Latest Changes
+
+- Date: 2026-09-08
+- Changed files: `PROJECT_CONTEXT.md`
+- What changed: Reviewed the documented Windows Android startup workflow: start Metro on port 8082, then launch `developmentDebug` in a second terminal with an emulator or device connected.
+- Why it changed: Clarified how to run the project locally.
+- Risks or notes: No installation or build was performed. Further script and Gradle inspection was blocked by a shell process startup error; release signing and release build outputs remain unverified in this session.
 
 - Date: 2026-08-31
 - Changed files: `scripts/run-android.js`, `PROJECT_CONTEXT.md`
@@ -142,3 +148,21 @@ For iOS native dependencies, run `pod install` from `ios/` on macOS before build
 - What changed: Replaced the obsolete patched carousel with a React Native core horizontal `FlatList`, preserving card sizing, centered presentation, snapping, autoplay timing, wrap-to-first behavior, and RTL-aware scrolling. Removed the obsolete Jest mock and direct carousel, type, and temporary `prop-types` dependencies.
 - Why it changed: Installed `react-native-snap-carousel` 1.6.1 uses legacy React APIs and an older `items`/renderer contract that does not match the application's `data` usage or React 19/New Architecture runtime.
 - Risks or notes: No replacement dependency was added. Android `developmentDebug` built and installed successfully, Metro served the bundle on port 8082, and the login screen rendered with a live process and no carousel/React fatal error. Home carousel gestures and autoplay could not be observed without an authenticated session.
+
+- Date: 2026-09-08
+- Changed files: `scripts/run-android.js`, `PROJECT_CONTEXT.md`
+- What changed: Resolve React Native's exported `package.json` and use its declared CLI binary path. Corrected the documented React Native version to the verified 0.87.1.
+- Why it changed: Directly resolving `react-native/cli.js` fails with `ERR_PACKAGE_PATH_NOT_EXPORTED` in the installed version.
+- Risks or notes: Node syntax checking and the development command with `--help` passed. Flavor application IDs and Metro port handling are preserved. No Android build was run.
+
+- Date: 2026-09-08
+- Changed files: `PROJECT_CONTEXT.md` (diagnostic results only)
+- What changed: Inspected Reanimated x86_64 generated Ninja rules and tested the NDK compiler directly. `clang++.exe --version` passed. A targeted `ninja -j 1 reanimated` retry compiled eight objects, including the originally failing AnimatedSensorModule, then failed to launch the compiler for UpdatesRegistry.cpp with `CreateProcess: Access is denied`.
+- Why it changed: Investigated the reported development build failure without changing dependency or build configuration.
+- Risks or notes: Single-job compilation does not eliminate the denial. Recent Code Integrity/Defender event queries returned no block identifying this failure; the responsible mechanism remains unknown. A process trace around the denied launch is the next diagnostic step. No APK was built or installed.
+
+- Date: 2026-09-08
+- Changed files: `PROJECT_CONTEXT.md` (capture analysis only)
+- What changed: Inspected user-provided `procmon-build.csv`. At 11:08:01, clang PID 8568 loaded its executable and ntdll.dll, then exited with -1073741790 (0xC0000022, access denied); Ninja PID 14312 exited with status 1 immediately afterward. Other compiler processes exited successfully. No ACCESS DENIED Result rows appear; the denial is in the process exit Detail.
+- Why it changed: Correlated the reproduced native build failure with Process Monitor evidence.
+- Risks or notes: Code Integrity, AppLocker EXE/DLL, Defender, and Application log queries around the failure returned no events. The CSV lacks call stacks; the cause remains unproven. Preserve the original capture as PML with all events for further analysis. No dependency or build configuration changes were made.

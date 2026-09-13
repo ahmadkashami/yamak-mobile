@@ -1,4 +1,5 @@
 apply plugin: "com.android.application"
+apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
 
 def nodeExecutable = System.getenv("NODE_BINARY") ?: "node"
@@ -72,7 +73,8 @@ def enableProguardInReleaseBuilds = false
 apply from: new File([nodeExecutable, "--print", "require.resolve('@sentry/react-native/package.json')"].execute(null, rootProject.projectDir.parentFile).text.trim(), "../sentry.gradle")
 android {
     ndkVersion rootProject.ext.ndkVersion
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdk rootProject.ext.compileSdkVersion
 
       flavorDimensions "default"
     productFlavors {
@@ -105,7 +107,7 @@ android {
         versionName "2.8"
         externalNativeBuild {
             cmake {
-                arguments "-DCMAKE_NINJA_FORCE_RESPONSE_FILE=ON"
+                arguments "-DCMAKE_NINJA_FORCE_RESPONSE_FILE=ON", "-DCMAKE_MAKE_PROGRAM=C:/Users/AAlYassin/AppData/Local/Android/Sdk/cmake/ninja/1.12.1/ninja.exe"
             }
         }
     }
@@ -126,7 +128,7 @@ android {
             // see https://reactnative.dev/docs/signed-apk-android.
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
-            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
         }
     }
 }

@@ -143,7 +143,8 @@ async function main() {
     args.push('--no-packager');
   }
 
-  const cli = require.resolve('react-native/cli.js', { paths: [root] });
+  const packagePath = require.resolve('react-native/package.json', { paths: [root] });
+  const cli = path.resolve(path.dirname(packagePath), require(packagePath).bin['react-native']);
   const result = spawnSync(process.execPath, [cli, 'run-android', ...args], {
     cwd: root,
     env,
