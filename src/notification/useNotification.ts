@@ -1,7 +1,19 @@
 
 
 import { PermissionsAndroid, Platform, StyleSheet, Text, View } from 'react-native'
-import messaging from '@react-native-firebase/messaging';
+import {
+  getMessaging,
+  getToken,
+  isDeviceRegisteredForRemoteMessages,
+  registerDeviceForRemoteMessages,
+  subscribeToTopic,
+  onMessage,
+  setBackgroundMessageHandler,
+  onNotificationOpenedApp,
+  getInitialNotification,
+  requestPermission,
+  AuthorizationStatus,
+} from '@react-native-firebase/messaging';
 import PushNotification from "react-native-push-notification";
 
 import React, { useCallback, useState } from 'react'
@@ -21,7 +33,7 @@ const useNotification = () => {
                 setFcmToken(JSON.parse(storedToken))
                 return
             }
-            token = await messaging().getToken();
+            token = await getToken(getMessaging());
             if (token) {
                 console.log('getFcmToken-->', token);
                 await setStorageValues(AsyncStorageConstants.fcmToken, JSON.stringify(token))
@@ -39,13 +51,13 @@ const useNotification = () => {
 
 
     async function registerAppWithFCM() {
+        const messaging = getMessaging();
         console.log(
             'registerAppWithFCM status',
-            messaging().isDeviceRegisteredForRemoteMessages,
+            isDeviceRegisteredForRemoteMessages(messaging),
         );
-        if (!messaging().isDeviceRegisteredForRemoteMessages) {
-            await messaging()
-                .registerDeviceForRemoteMessages()
+        if (!isDeviceRegisteredForRemoteMessages(messaging)) {
+            await registerDeviceForRemoteMessages(messaging)
                 .then(status => {
                     console.log('registerDeviceForRemoteMessages status', status);
                 })
@@ -55,15 +67,14 @@ const useNotification = () => {
         }
     }
     const subscribeTopic = useCallback((topic: string) => {
-        messaging()
-            .subscribeToTopic(topic)
+        subscribeToTopic(getMessaging(), topic)
             .then(() => console.log("Subscribed to topic:", topic))
             .catch((e) => {
                 console.log(e);
             });
     }, [])
     const listenToForegroundNotifications = async () => {
-        const unsubscribe = messaging().onMessage(async remoteMessage => {
+        const unsubscribe = onMessage(getMessaging(), async remoteMessage => {
 
             PushNotification.localNotification({
                 title: remoteMessage?.notification?.title,
@@ -83,7 +94,8 @@ const useNotification = () => {
     }
 
     const listenToBackgroundNotifications = async () => {
-        const unsubscribe = messaging().setBackgroundMessageHandler(
+        setBackgroundMessageHandler(
+            getMessaging(),
             async remoteMessage => {
                 console.log(
                     'A new message arrived! (BACKGROUND)',
@@ -91,11 +103,11 @@ const useNotification = () => {
                 );
             },
         );
-        return unsubscribe;
     }
 
     const onNotificationOpenedAppFromBackground = async () => {
-        const unsubscribe = messaging().onNotificationOpenedApp(
+        const unsubscribe = onNotificationOpenedApp(
+            getMessaging(),
             async remoteMessage => {
                 console.log(
                     'App opened from BACKGROUND by tapping notification:',
@@ -107,7 +119,7 @@ const useNotification = () => {
     };
 
     const onNotificationOpenedAppFromQuit = async () => {
-        const message = await messaging().getInitialNotification();
+        const message = await getInitialNotification(getMessaging());
 
         if (message) {
             console.log('App opened from QUIT by tapping notification:', JSON.stringify(message));
@@ -117,14 +129,14 @@ const useNotification = () => {
     const checkApplicationNotificationPermission = async () => {
         if (Platform.OS === 'ios') {
             //Request iOS permission
-            const authStatus = await messaging().requestPermission({
+            const authStatus = await requestPermission(getMessaging(), {
                 sound: true,
                 carPlay: true,
                 announcement: true,
             });
             const enabled =
-                authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
-                authStatus === messaging.AuthorizationStatus.PROVISIONAL;
+                authStatus === AuthorizationStatus.AUTHORIZED ||
+                authStatus === AuthorizationStatus.PROVISIONAL;
             if (enabled) {
                 getFcmToken()
                 console.log('Authorization status:', authStatus);
